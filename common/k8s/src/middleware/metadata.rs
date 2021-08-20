@@ -269,8 +269,8 @@ struct PodMetadata {
 mod tests {
     use super::*;
     use http::types::body::{LineBuilder, LineMeta};
-    use std::time::Instant;
     use hyper_http::Uri;
+    use std::time::Instant;
 
     #[tokio::test]
     async fn test_process_with_file_that_can_not_be_parsed() {
